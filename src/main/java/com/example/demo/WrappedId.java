@@ -8,14 +8,10 @@ import org.springframework.core.convert.converter.GenericConverter;
 import java.util.Set;
 
 public class WrappedId {
-    private final long id;
+    long id;
 
     public WrappedId(long id) {
         this.id = id;
-    }
-
-    public long getId() {
-        return id;
     }
 
     static class Converter implements GenericConverter {

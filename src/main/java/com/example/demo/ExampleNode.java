@@ -7,10 +7,7 @@ public class ExampleNode {
     @Id
     WrappedId id;
 
-    int value;
-
-    public ExampleNode(@Nullable WrappedId id, int value) {
+    public ExampleNode(@Nullable WrappedId id) {
         this.id = id;
-        this.value = value;
     }
 }
